@@ -1,0 +1,8 @@
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\bin\Debug\webserver_csharp.exe.config
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\bin\Debug\webserver_csharp.exe
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\bin\Debug\webserver_csharp.pdb
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.csproj.AssemblyReference.cache
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.csproj.CoreCompileInputs.cache
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.exe
+C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.pdb
