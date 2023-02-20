@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using System.IO;
 
 namespace LoginSystem_server
 {
@@ -27,6 +28,9 @@ namespace LoginSystem_server
         static public string last_msg = "";
         static Random rand = new Random();
 
+        static string website_root = @"C:\Users\lucky\source\repos\webserver_csharp\www\";            //Has to be CHANGED
+        static List<string> headers = new List<string>();
+
 
 
         public static void Main()
@@ -36,6 +40,43 @@ namespace LoginSystem_server
             Listen1();
 
 
+        }
+
+
+        static string FileToString(string file)
+        {
+            FileStream fs = new FileStream(website_root+file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            StreamReader reader = new StreamReader(fs);
+            return reader.ReadToEnd();
+        }
+        static List<string> ParseRequest(string request)
+        {
+            List<string> words = new List<string>();
+            string word = "";
+            for(int i = 0; i < request.Length; i++)
+            {
+                if (request[i] == ' ')
+                {
+                    words.Add(word);
+                    word = "";
+                }
+                word += request[i];
+            }
+            return null;
+        }
+        static string MergeHeadersInString()
+        {
+            string header_str = "";
+            for(int i = 0; i < headers.Count; i++)
+            {
+                header_str += headers[i];
+                header_str += "\r\n";
+                if (i == headers.Count - 1)
+                {
+                    header_str += "\r\n";
+                }
+            }
+            return header_str;
         }
 
         private static void Listen1()
@@ -59,9 +100,26 @@ namespace LoginSystem_server
                     int bytesReceived = clientSocket.Receive(buffer);
                     string message = Encoding.ASCII.GetString(buffer, 0, bytesReceived);
                     last_msg = message;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(message);
-                    Send("Hello world", clientSocket);
+
+                    string response_body = FileToString("index.html");
+                    headers.Clear();
+                    headers.Add("HTTP/1.1 200 OK");
+                    headers.Add("Content-Type: text/html; charset=UTF-8");
+                    headers.Add("Content-Length: " + response_body.Length);
+                    string response = MergeHeadersInString() + response_body;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(response);
+                    Send(response, clientSocket);
+                    
+                    
+                    
+                    
                     clientSocket.Close();
+
+
+                    Console.WriteLine("\n\n\n\n");
 
                 }
             }
