@@ -6,3 +6,10 @@ C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserve
 C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.csproj.CoreCompileInputs.cache
 C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.exe
 C:\Users\lucky\source\repos\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.pdb
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\bin\Debug\webserver_csharp.exe.config
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\bin\Debug\webserver_csharp.exe
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\bin\Debug\webserver_csharp.pdb
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.csproj.CoreCompileInputs.cache
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.exe
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.pdb
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\Visual Studio 2019\webserver_csharp\webserver_csharp\obj\Debug\webserver_csharp.csprojAssemblyReference.cache
